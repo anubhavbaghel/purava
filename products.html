@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Purava Health Faucets Product Catalogue — Premium chrome, stainless steel, ergonomic, and high-pressure jet spray models.">
+    <title>Health Faucets Catalogue | PURAVA — Premium Jet Sprays</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* ---- Products Page Specific ---- */
+
+
+        .product-section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .product-section-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 48px;
+            gap: 24px;
+        }
+
+        .product-section-header h2 {
+            font-size: 2rem;
+        }
+
+        .product-section-header p {
+            max-width: 420px;
+            text-align: right;
+        }
+
+        /* Product detail card - expanded */
+        .product-detail-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+            background: var(--white);
+            border: 1px solid var(--slate-200);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .product-detail-img {
+            background: var(--silk-white);
+            padding: 64px;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid var(--slate-100);
+        }
+
+        .product-detail-img img {
+            max-height: 380px;
+            object-fit: contain;
+        }
+
+        .product-detail-info {
+            padding: 48px 48px 48px 0;
+        }
+
+        .product-detail-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: var(--navy);
+        }
+
+        .product-detail-info p {
+            margin-bottom: 28px;
+            font-size: 1rem;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .spec-item {
+            padding: 12px 16px;
+            background: var(--grey-100);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .spec-item .spec-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .spec-item .spec-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        @media (max-width: 768px) {
+            .product-detail-card {
+                grid-template-columns: 1fr;
+            }
+
+            .product-detail-info {
+                padding: 32px;
+            }
+
+            .product-section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .product-section-header p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="solid" id="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-wrap">
+                    <!-- Light logo: visible on transparent header (dark hero bg) -->
+                    <img src="images/logo-light.png" alt="Purava Logo" class="site-logo logo-light">
+                    <!-- Dark logo: visible on solid white scrolled header -->
+                    <img src="images/logo-dark.png" alt="Purava Logo" class="site-logo logo-dark">
+                </a>
+                <button class="menu-toggle" id="menuToggle"><i class="ph ph-list"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="enquiry.html" class="nav-cta">Business Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <span class="eyebrow">Complete Catalogue</span>
+        <h1>Premium Health Faucets</h1>
+        <p>Explore our complete range of jet sprays and health faucets — crafted from the finest brass and stainless
+            steel for lasting performance.</p>
+    </div>
+
+    <!-- SECTION 1: CHROME -->
+    <section class="product-section" id="chrome">
+        <div class="container">
+            <div class="product-section-header reveal-up">
+                <div>
+                    <span class="eyebrow">Category 01</span>
+                    <h2>Premium Chrome Health Faucets</h2>
+                </div>
+                <p>Mirror-bright chrome finish with solid brass internals. Our most popular range for luxury residential
+                    bathrooms.</p>
+            </div>
+
+            <div class="product-detail-card reveal-up">
+                <div class="product-detail-img">
+                    <img src="images/faucet_chrome_white.png" alt="Premium Chrome Health Faucet">
+                </div>
+                <div class="product-detail-info">
+                    <span class="eyebrow">Bestseller</span>
+                    <h3>Chrome Classic Health Faucet</h3>
+                    <p>The signature Purava health faucet. A beautiful combination of chrome-plated brass body,
+                        ergonomic trigger handle, and anti-drip nozzle. Delivers consistent water pressure in all
+                        household conditions.</p>
+
+                    <ul class="feature-list" style="margin-bottom: 28px;">
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>Mirror-polished chrome plated brass body</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>Anti-drip precision nozzle</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>1.5m flexible braided hose included</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>Universal wall mount fitting</span>
+                        </li>
+                    </ul>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Material</span>
+                            <span class="spec-value">Brass + Chrome</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Finish</span>
+                            <span class="spec-value">Mirror Chrome</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hose Length</span>
+                            <span class="spec-value">1.5 Metres</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pressure</span>
+                            <span class="spec-value">0.5 – 8 Bar</span>
+                        </div>
+                    </div>
+
+                    <a href="enquiry.html" class="btn btn-primary">Request Wholesale Quote</a>
+                </div>
+            </div>
+
+            <div class="product-grid" style="margin-top: 40px;">
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <img src="images/faucet_accurate_1.png" alt="Chrome Pro Health Faucet">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>Chrome Pro Jet Spray</h3>
+                        <p>Heavy-duty chrome with reinforced hose coupling and extended trigger for commercial use.</p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <img src="images/faucet_accurate_3.png" alt="Chrome Slim Health Faucet">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>Chrome Slim Faucet</h3>
+                        <p>Slimline ergonomic profile. Lightweight and elegant for premium home bathroom installations.
+                        </p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: STAINLESS STEEL -->
+    <section class="product-section" id="steel">
+        <div class="container">
+            <div class="product-section-header reveal-up">
+                <div>
+                    <span class="eyebrow">Category 02</span>
+                    <h2>Stainless Steel Jet Sprays</h2>
+                </div>
+                <p>Full 304-grade stainless steel construction. The most durable, rust-free choice for commercial and
+                    high-use environments.</p>
+            </div>
+
+            <div class="product-detail-card reveal-up" style="flex-direction: row-reverse;">
+                <div class="product-detail-img" style="background: var(--navy);">
+                    <img src="images/faucet_steel_white.png" alt="Stainless Steel Jet Spray">
+                </div>
+                <div class="product-detail-info">
+                    <span class="eyebrow">Commercial Grade</span>
+                    <h3>SS 304 Jet Spray</h3>
+                    <p>Built for hotels, commercial washrooms, and high-traffic environments. Full stainless steel body,
+                        braided hose, and a precision multi-spray nozzle head deliver unmatched durability and
+                        performance.</p>
+
+                    <ul class="feature-list" style="margin-bottom: 28px;">
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>100% SS 304 stainless steel body</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>Rust and corrosion-proof guarantee</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>High-flex reinforced braided hose</span>
+                        </li>
+                        <li class="feature-list-item">
+                            <span class="check"><i class="ph-bold ph-check"></i></span>
+                            <span>Ideal for hotels, hospitals, and offices</span>
+                        </li>
+                    </ul>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Material</span>
+                            <span class="spec-value">SS 304</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Finish</span>
+                            <span class="spec-value">Brushed Steel</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Hose Length</span>
+                            <span class="spec-value">1.5 – 2 Metres</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Pressure</span>
+                            <span class="spec-value">1 – 10 Bar</span>
+                        </div>
+                    </div>
+
+                    <a href="enquiry.html" class="btn btn-primary">Request Wholesale Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ERGONOMIC + HIGH PRESSURE -->
+    <section class="product-section" id="ergonomic" style="border-bottom: none;">
+        <div class="container">
+            <div class="product-section-header reveal-up">
+                <div>
+                    <span class="eyebrow">Category 03 & 04</span>
+                    <h2>Ergonomic & High-Pressure Models</h2>
+                </div>
+                <p>Designed for comfort and performance. Our ergonomic and high-pressure ranges cater to every bathroom
+                    type and user need.</p>
+            </div>
+
+            <div class="product-grid" id="highpressure">
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <span class="product-card-badge">New</span>
+                        <img src="images/faucet_accurate_2.png" alt="Ergonomic Trigger Jet Spray">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>Ergonomic Trigger Jet Spray</h3>
+                        <p>Soft-grip precision trigger for fatigue-free daily use. Available in chrome and matte black.
+                        </p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <img src="images/faucet_accurate_4.png" alt="High-Pressure Jet Spray">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>High-Pressure Heavy Duty Spray</h3>
+                        <p>Wide-angle nozzle with a reinforced body. Ideal for high-pressure systems in commercial
+                            washrooms.</p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <img src="images/faucet_chrome_white.png" alt="Economy Health Faucet">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>Economy Chrome Faucet</h3>
+                        <p>Entry-level chrome health faucet for affordable housing projects and budget-conscious buyers.
+                        </p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="enquiry.html" class="product-card reveal-up">
+                    <div class="product-card-img">
+                        <img src="images/faucet_steel_white.png" alt="OEM Custom Health Faucet">
+                    </div>
+                    <div class="product-card-info">
+                        <h3>OEM / Private Label Faucet</h3>
+                        <p>Custom branded health faucets manufactured to your specification. Available for wholesale
+                            partners.</p>
+                        <span class="product-card-link">Enquire Now <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="container">
+            <span class="eyebrow reveal-up">Wholesale & Distribution</span>
+            <h2 class="reveal-up">Interested in Bulk Orders or Distribution?</h2>
+            <p class="reveal-up">Fill in our distributor enquiry form and our sales team will contact you within 24
+                hours.</p>
+            <div class="cta-actions reveal-up">
+                <a href="enquiry.html" class="btn btn-primary">Submit Distributor Enquiry</a>
+                <a href="contact.html" class="btn btn-outline">Contact Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="images/logo-light.png" class="footer-logo-img" alt="Purava Logo">
+                    <span class="footer-logo-text" style="display:none">PURAVA</span>
+                    <p>Premium Health Faucets &amp; Jet Sprays.<br>Manufactured in India.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#chrome">Chrome Faucets</a></li>
+                        <li><a href="#steel">Stainless Steel</a></li>
+                        <li><a href="#ergonomic">Ergonomic Models</a></li>
+                        <li><a href="#highpressure">High Pressure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="enquiry.html">Distributors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:info@purava.com">info@purava.com</a></li>
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li>Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Purava. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Scroll animations
+        const reveals = document.querySelectorAll('.reveal-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(el => observer.observe(el));
+
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+</body>
+
+</html>

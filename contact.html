@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Purava — Premium Health Faucet Manufacturer. Reach our wholesale and distribution team.">
+    <title>Contact Us | PURAVA — Premium Health Faucets</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home_sections.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 24px;
+            background: var(--silk-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: all 0.3s var(--ease);
+        }
+
+        .contact-info-item:hover {
+            border-color: var(--border-gold);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-info-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: var(--gold-pale);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info-content h4 {
+            font-family: var(--sans);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+            margin-bottom: 4px;
+        }
+
+        .contact-info-content p,
+        .contact-info-content a {
+            font-size: 0.95rem;
+            color: var(--navy);
+            font-weight: 500;
+        }
+
+        .contact-info-content a:hover {
+            color: var(--gold);
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="solid" id="site-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-wrap">
+                    <img src="images/logo-light.png" alt="Purava Logo" class="site-logo logo-light">
+                    <img src="images/logo-dark.png" alt="Purava Logo" class="site-logo logo-dark">
+                </a>
+                <button class="menu-toggle" id="menuToggle"><i class="ph ph-list"></i></button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="enquiry.html" class="nav-cta">Business Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <span class="eyebrow">We'd Love to Hear From You</span>
+        <h1>Contact Us</h1>
+        <p>Reach our team for enquiries about wholesale, distribution partnerships, or product information.</p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-sm">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Left: Info Cards -->
+                <div class="contact-info-stack reveal-up">
+                    <div style="margin-bottom: 8px;">
+                        <span class="eyebrow">Get in Touch</span>
+                        <h2 style="font-size: 2rem; margin-bottom: 8px;">We're Here to Help</h2>
+                        <p style="margin-bottom: 32px;">Our sales and support team responds to all B2B enquiries within
+                            one business day.</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph ph-envelope"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:info@purava.com">info@purava.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph ph-phone"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph ph-map-pin"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph ph-clock"></i></div>
+                        <div class="contact-info-content">
+                            <h4>Business Hours</h4>
+                            <p>Mon – Sat &nbsp;|&nbsp; 9:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <a href="enquiry.html" class="btn btn-gold" style="margin-top: 8px; justify-content: center;">
+                        Submit Distributor Enquiry <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="info-card reveal-up">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 8px;">Send a Message</h3>
+                    <p style="margin-bottom: 32px;">Have a question or want to discuss a potential partnership? Fill in
+                        the form below.</p>
+
+                    <form
+                        onsubmit="event.preventDefault(); this.innerHTML='<div style=\'text-align:center; padding: 60px 0;\'><i class=\'ph ph-check-circle\' style=\'font-size: 3rem; color: var(--gold); display: block; margin-bottom: 16px;\'></i><h3>Message Sent!</h3><p>Thank you for reaching out. We will get back to you within 24 hours.</p></div>';">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 0;">
+                            <div class="field-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" class="field-control" required placeholder="Your name">
+                            </div>
+                            <div class="field-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" class="field-control" required
+                                    placeholder="email@company.com">
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" class="field-control"
+                                placeholder="Your company (if applicable)">
+                        </div>
+                        <div class="field-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" class="field-control" required>
+                                <option value="" disabled selected>What is this regarding?</option>
+                                <option>Product Enquiry</option>
+                                <option>Distributor / Wholesale Partnership</option>
+                                <option>Bulk Order</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" class="field-control" style="min-height: 150px;" required
+                                placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; justify-content: center; padding: 15px;">
+                            Send Message <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="images/logo-light.png" class="footer-logo-img" alt="Purava Logo">
+                    <p>Premium Health Faucets &amp; Jet Sprays.<br>Manufactured in India.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="products.html#chrome">Chrome Faucets</a></li>
+                        <li><a href="products.html#steel">Stainless Steel</a></li>
+                        <li><a href="products.html#ergonomic">Ergonomic Models</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="enquiry.html">Distributor Programme</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:info@purava.com">info@purava.com</a></li>
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li>Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Purava. All rights reserved.</p>
+                <p>Premium Health Faucet Manufacturer — Made in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+/* home_sections.css — Extended Homepage Sections */
+/* All base styles are inherited from style.css */
+
+/* The home_sections.css is now mostly cleared — 
+   all sections are using the unified style.css design system.
+   Only page-specific overrides belong here. */
+
+/* Hero subtle pattern overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 80% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ---- Centered hero variant (matching Lovable reference) ---- */
+.hero-centered {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-centered .eyebrow {
+    color: var(--gold-light);
+    letter-spacing: 0.2em;
+    font-size: 0.78rem;
+    margin-bottom: 22px;
+    display: block;
+}
+
+.hero-centered h1 {
+    margin-bottom: 24px;
+}
+
+.hero-centered p {
+    color: rgba(255, 255, 255, 0.78);
+    max-width: 560px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.hero-actions-center {
+    justify-content: center;
+}
+
+/* ---- 3-Column Product Showcase Grid ---- */
+.product-grid-3col {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 36px !important;
+}
+
+/* Enhanced card sizes for the homepage showcase */
+.product-grid-3col .product-card-img {
+    aspect-ratio: 4 / 3;
+    /* wider, less portrait — more spacious */
+    padding: 44px;
+}
+
+.product-grid-3col .product-card-info {
+    padding: 28px 32px 36px;
+}
+
+.product-grid-3col .product-card-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.product-grid-3col .product-card-info p {
+    font-size: 0.92rem;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .product-grid-3col {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid-3col {
+        grid-template-columns: 1fr !important;
+    }
+}
