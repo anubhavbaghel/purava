@@ -761,15 +761,15 @@ header.solid .menu-toggle {
 }
 
 /* ===== BENEFITS SECTION ===== */
-/* Base benefits section styles - inherits from .section for backgrounds */
 .benefits {
   position: relative;
 }
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr) !important;
+  /* Strictly 4 columns for luxury symmetry */
+  gap: 32px;
 }
 
 .benefit-item {
@@ -782,9 +782,9 @@ header.solid .menu-toggle {
 }
 
 .benefit-item:hover {
-  transform: translateY(-4px);
   border-color: var(--gold);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
 }
 
 .benefit-icon {
@@ -801,34 +801,24 @@ header.solid .menu-toggle {
   transition: all 0.3s var(--ease);
 }
 
-/* Icons should remain dark on white cards regardless of section background */
-.section-dark .benefit-item .benefit-icon {
-  background: var(--slate-100);
-  color: var(--navy);
-}
-
 .benefit-item:hover .benefit-icon {
   background: var(--navy);
   color: var(--white);
   transform: scale(1.05);
 }
 
-.section-dark .benefit-item:hover .benefit-icon {
-  background: var(--white);
-  color: var(--navy);
-}
-
 .benefit-item h4 {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--navy);
+  color: var(--navy) !important;
   font-family: var(--sans);
 }
 
 .benefit-item p {
-  font-size: 0.87rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
+  color: var(--text-muted) !important;
+  line-height: 1.6;
 }
 
 /* ===== FEATURE HIGHLIGHT SPLIT ===== */
