@@ -400,6 +400,7 @@ header.solid {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  position: relative;
 }
 
 .logo-wrap {
@@ -437,6 +438,15 @@ header.solid .logo-light {
   display: none;
 }
 
+/* Visibility helpers */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
 /* Handle default solid header on internal pages */
 header:not(.transparent) .logo-dark {
   display: block;
@@ -467,6 +477,9 @@ header.solid .logo-text {
   display: flex;
   align-items: center;
   gap: 36px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -506,7 +519,7 @@ header.solid .nav-links a:not(.btn):hover {
   color: var(--navy);
 }
 
-.nav-links .nav-cta {
+.navbar .nav-cta {
   padding: 10px 22px;
   background: var(--gold);
   color: var(--white) !important;
@@ -515,15 +528,16 @@ header.solid .nav-links a:not(.btn):hover {
   font-size: 1.1rem;
   letter-spacing: 0.04em;
   transition: all 0.3s var(--ease);
+  display: inline-block;
 }
 
-.nav-links .nav-cta:hover {
+.navbar .nav-cta:hover {
   background: #a07826;
   box-shadow: var(--shadow-gold);
   transform: translateY(-1px);
 }
 
-.nav-links .nav-cta::after {
+.navbar .nav-cta::after {
   display: none;
 }
 
@@ -1352,6 +1366,7 @@ textarea.field-control {
     top: 80px;
     left: 0;
     right: 0;
+    transform: none;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(16px);
     flex-direction: column;

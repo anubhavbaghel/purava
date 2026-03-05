@@ -23,7 +23,7 @@
 <body>
 
     <!-- ====== HEADER ====== -->
-    <header class="transparent" id="site-header">
+    <header class="solid" id="site-header">
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="logo-wrap">
@@ -43,8 +43,11 @@
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="enquiry.html" class="nav-cta">Business Enquiry</a></li>
+                    <li class="mobile-only"><a href="enquiry.html" class="nav-cta">Business Enquiry</a></li>
                 </ul>
+                <div class="nav-actions desktop-only">
+                    <a href="enquiry.html" class="nav-cta">Business Enquiry</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -443,18 +446,7 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Transparent → solid header on scroll
-        const header = document.getElementById('site-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 60) {
-                header.classList.replace('transparent', 'solid');
-            } else {
-                header.classList.replace('solid', 'transparent');
-            }
-        });
-
-        // Mobile menu toggle
+    <script>// Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
         menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
