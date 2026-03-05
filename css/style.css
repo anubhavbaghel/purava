@@ -181,14 +181,22 @@ p {
 
 .section-dark .section-heading h2,
 .section-dark .section-heading p,
-.section-dark .section-heading .eyebrow,
+.section-dark .section-heading .eyebrow {
+  color: var(--white) !important;
+}
+
 .section-dark h1,
 .section-dark h2,
 .section-dark h3,
 .section-dark h4,
-.section-dark .eyebrow,
-.section-dark p {
-  color: var(--white) !important;
+.section-dark p,
+.section-dark .eyebrow {
+  color: var(--white);
+}
+
+.section-dark .benefit-item h4,
+.section-dark .benefit-item p {
+  color: var(--navy) !important;
 }
 
 .section-dark .divider {
@@ -753,8 +761,9 @@ header.solid .menu-toggle {
 }
 
 /* ===== BENEFITS SECTION ===== */
+/* Base benefits section styles - inherits from .section for backgrounds */
 .benefits {
-  /* Inherit from parent section classes */
+  position: relative;
 }
 
 .benefits-grid {
@@ -792,9 +801,10 @@ header.solid .menu-toggle {
   transition: all 0.3s var(--ease);
 }
 
-.section-dark .benefit-icon {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--white);
+/* Icons should remain dark on white cards regardless of section background */
+.section-dark .benefit-item .benefit-icon {
+  background: var(--slate-100);
+  color: var(--navy);
 }
 
 .benefit-item:hover .benefit-icon {
