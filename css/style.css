@@ -754,7 +754,7 @@ header.solid .menu-toggle {
 
 /* ===== BENEFITS SECTION ===== */
 .benefits {
-  background: var(--grey-100);
+  /* Inherit from parent section classes */
 }
 
 .benefits-grid {
@@ -792,10 +792,20 @@ header.solid .menu-toggle {
   transition: all 0.3s var(--ease);
 }
 
+.section-dark .benefit-icon {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
 .benefit-item:hover .benefit-icon {
   background: var(--navy);
   color: var(--white);
   transform: scale(1.05);
+}
+
+.section-dark .benefit-item:hover .benefit-icon {
+  background: var(--white);
+  color: var(--navy);
 }
 
 .benefit-item h4 {
