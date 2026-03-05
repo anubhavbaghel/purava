@@ -181,12 +181,18 @@ p {
 
 .section-dark .section-heading h2,
 .section-dark .section-heading p,
+.section-dark .section-heading .eyebrow,
 .section-dark h1,
 .section-dark h2,
 .section-dark h3,
 .section-dark h4,
-.section-dark .eyebrow {
+.section-dark .eyebrow,
+.section-dark p {
   color: var(--white) !important;
+}
+
+.section-dark .divider {
+  background: var(--gold-light) !important;
 }
 
 .section-dark .text-muted {
