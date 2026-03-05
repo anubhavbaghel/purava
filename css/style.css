@@ -409,7 +409,7 @@ header.solid {
 }
 
 .site-logo {
-  height: 80px;
+  height: 65px;
   /* Essential for uniformity */
   width: auto;
   object-fit: contain;
@@ -511,8 +511,8 @@ header.solid .nav-links a:not(.btn):hover {
   background: var(--gold);
   color: var(--white) !important;
   border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.85rem;
+  font-weight: 300;
+  font-size: 1.1rem;
   letter-spacing: 0.04em;
   transition: all 0.3s var(--ease);
 }
@@ -1183,7 +1183,7 @@ footer {
 }
 
 .footer-logo-img {
-  height: 80px;
+  height: 65px;
   /* Match header height for brand consistency */
   width: auto;
   object-fit: contain;
