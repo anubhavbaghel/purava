@@ -543,6 +543,46 @@ header.solid .nav-links a:not(.btn):hover {
   display: none;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar .nav-cta-outline,
+.nav-links .nav-cta-outline {
+  padding: 10px 22px;
+  background: transparent;
+  color: var(--white) !important;
+  border: 1px solid var(--white);
+  border-radius: var(--radius-sm);
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  transition: all 0.3s var(--ease);
+  display: inline-block;
+}
+
+.navbar .nav-cta-outline:hover,
+.nav-links .nav-cta-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+header.solid .navbar .nav-cta-outline,
+.nav-links .nav-cta-outline {
+  color: var(--navy) !important;
+  border-color: var(--navy);
+}
+
+header.solid .navbar .nav-cta-outline:hover,
+.nav-links .nav-cta-outline:hover {
+  background: rgba(8, 15, 26, 0.05);
+}
+
+.nav-links .nav-cta-outline::after {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   font-size: 1.6rem;
