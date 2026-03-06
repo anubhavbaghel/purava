@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the Purava journey — A decade of engineering excellence, manufacturing premium health faucets with a commitment to hygiene and luxury.">
+    <title>About Purava | Crafting Excellence in Hygiene & Luxury</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .about-hero {
+            padding: 160px 0 100px;
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(169, 137, 72, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 24px;
+            color: var(--gold);
+        }
+
+        .about-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .story-section {
+            padding: 100px 0;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .story-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 32px;
+        }
+
+        .story-content p {
+            margin-bottom: 24px;
+            line-height: 1.8;
+            color: var(--slate-700);
+        }
+
+        .story-img img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .values-section {
+            padding: 100px 0;
+            background: var(--silk-white);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-top: 64px;
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 40px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+
+        .value-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+
+        .excellence-section {
+            padding: 100px 0;
+        }
+
+        .excellence-split {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .excellence-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .stat-item p {
+            font-weight: 500;
+            color: var(--navy);
+        }
+
+        @media (max-width: 992px) {
+
+            .story-grid,
+            .excellence-split {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="solid" id="site-header">
+        <div class="container" style="max-width: 100%; padding: 0 40px;">
+            <nav class="navbar">
+                <a href="index.html" class="logo-wrap">
+                    <img src="images/logo-light.png" alt="Purava Logo" class="site-logo logo-light">
+                    <img src="images/logo-dark.png" alt="Purava Logo" class="site-logo logo-dark">
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li class="mobile-only"><a href="PURAVA%2020-11-2025.pdf" class="nav-cta-outline"
+                            download>Catalogue</a></li>
+                    <li class="mobile-only"><a href="enquiry.html" class="nav-cta">Business Enquiry</a></li>
+                </ul>
+                <div class="nav-actions desktop-only">
+                    <a href="PURAVA%2020-11-2025.pdf" class="nav-cta-outline" download>Catalogue</a>
+                    <a href="enquiry.html" class="nav-cta">Business Enquiry</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="reveal-up">
+                <span class="eyebrow" style="color: var(--gold-light);">Our Legacy</span>
+                <h1>Hygiene Redefined.</h1>
+                <p>For over a decade, Purava has been at the forefront of bathroom innovation, merging engineering
+                    precision with timeless luxury to create a standard of purity trusted across the nation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-img reveal-up">
+                    <img src="images/faucet_accurate_1.png" alt="Purava Manufacturing Excellence">
+                </div>
+                <div class="story-content reveal-up">
+                    <span class="eyebrow">The Purava Journey</span>
+                    <h2>A Commitment to Excellence from Day One</h2>
+                    <p>Founded with a singular vision to elevate bathroom hygiene, Purava started as a passionate
+                        endeavor to create the perfect health faucet. We realized that while luxury was often
+                        prioritized in bathroom design, true hygiene equipment was overlooked.</p>
+                    <p>Today, with more than 10 years of experience, we have transformed into a leading manufacturer of
+                        premium bathroom fixtures. Our journey is defined by a relentless pursuit of quality and a deep
+                        understanding of the sophisticated needs of modern Indian homes.</p>
+                    <p>We don't just manufacture products; we engineer sanctuaries. Every Purava fixture is a testament
+                        to our dedication to your health and the elegance of your living spaces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-heading reveal-up" style="text-align: center;">
+                <span class="eyebrow">Purpose & Principles</span>
+                <h2>Our Mission & Core Values</h2>
+                <div class="divider" style="margin: 24px auto;"></div>
+                <p style="margin: 0 auto; max-width: 600px;">Driven by innovation and anchored in integrity, our values
+                    guide every product we create and every partnership we build.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card reveal-up">
+                    <i class="ph ph-shield-check value-icon"></i>
+                    <h4>Precision Quality</h4>
+                    <p>Using only the highest-grade brass and SS-304, we ensure zero-leak performance and enduring
+                        brilliance.</p>
+                </div>
+                <div class="value-card reveal-up">
+                    <i class="ph ph-lightbulb value-icon"></i>
+                    <h4>Innovation First</h4>
+                    <p>Constantly evolving our designs to provide better ergonomics and more efficient water flow
+                        control.</p>
+                </div>
+                <div class="value-card reveal-up">
+                    <i class="ph ph-hand-heart value-icon"></i>
+                    <h4>Hygiene Focused</h4>
+                    <p>Our core philosophy is that superior hygiene is a necessity, not an optional luxury.</p>
+                </div>
+                <div class="value-card reveal-up">
+                    <i class="ph ph-sketch-logo value-icon"></i>
+                    <h4>Premium Luxury</h4>
+                    <p>Aesthetics that harmonize with the most sophisticated interiors, adding a touch of class to every
+                        corner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MANUFACTURING EXCELLENCE -->
+    <section class="excellence-section">
+        <div class="container">
+            <div class="excellence-split">
+                <div class="excellence-content reveal-up">
+                    <span class="eyebrow">Made in India</span>
+                    <h2>Engineering Precision at Scale</h2>
+                    <p>At Purava, manufacturing is an art of precision. Our state-of-the-art facilities in India combine
+                        traditional craftsmanship with advanced automated engineering. Every single health faucet
+                        undergoes a rigorous 7-point quality check—from material integrity to pressure testing—before it
+                        earns the Purava seal.</p>
+                    <p>Our commitment to local manufacturing not only ensures superior quality control but also allows
+                        us to innovate rapidly based on local feedback, creating products specifically built for the
+                        Indian water conditions and usage patterns.</p>
+                </div>
+                <div class="excellence-stats reveal-up">
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Rust-Proof Guarantee</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Retail Partners</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Zero</h3>
+                        <p>Leak Compromise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CTA BANNER ====== -->
+    <section class="cta-banner">
+        <div class="container">
+            <span class="eyebrow reveal-up">Join Our Journey</span>
+            <h2 class="reveal-up">Experience a New Standard of<br>Hygiene & Luxury</h2>
+            <p class="reveal-up">Explore our full collection of premium health faucets and accessories designed for
+                perfection.</p>
+            <div class="cta-actions reveal-up">
+                <a href="products.html" class="btn btn-primary">View Catalogue</a>
+                <a href="enquiry.html" class="btn btn-gold">Business Enquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="images/logo-light.png" class="footer-logo-img" alt="Purava Logo">
+                    <p>Premium Health Faucets.<br>Manufactured in India.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="products.html#brass-faucets">Brass Faucets</a></li>
+                        <li><a href="products.html#abs-faucets">ABS Faucets</a></li>
+                        <li><a href="products.html#hooks-brass">Brass Hooks</a></li>
+                        <li><a href="products.html#hooks-abs">ABS Hooks</a></li>
+                        <li><a href="products.html#shower-tubes">Shower Tubes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="enquiry.html">Distributors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:info@purava.com">info@purava.com</a></li>
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li>Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Purava. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Scroll animations
+        const reveals = document.querySelectorAll('.reveal-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(el => observer.observe(el));
+
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+</body>
+
+</html>
