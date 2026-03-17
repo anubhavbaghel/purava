@@ -55,7 +55,7 @@
 
 /* Enhanced card sizes for the homepage showcase */
 .product-grid-3col .product-card-img {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1;
     /* wider, less portrait — more spacious */
 }
 
