@@ -481,7 +481,7 @@ header.solid .logo-text {
   gap: 36px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
 }
 
 .nav-links a {
@@ -525,7 +525,7 @@ header.solid .nav-links a:not(.btn):hover {
   padding: 10px 22px;
   background: var(--gold);
   color: var(--white) !important;
-  border-radius: var(--radius-sm);
+  border-radius: 10px;
   font-weight: 300;
   font-size: 0.9rem;
   letter-spacing: 0.04em;
